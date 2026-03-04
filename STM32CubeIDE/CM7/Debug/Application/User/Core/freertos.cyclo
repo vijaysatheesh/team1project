@@ -1,0 +1,5 @@
+/home/nandana/TEAM_PROECT/team1project/CM7/Core/Src/freertos.c:73:7:findTemp	1
+/home/nandana/TEAM_PROECT/team1project/CM7/Core/Src/freertos.c:87:7:findAvg	3
+/home/nandana/TEAM_PROECT/team1project/CM7/Core/Src/freertos.c:98:6:leftShiftAndAdd	2
+/home/nandana/TEAM_PROECT/team1project/CM7/Core/Src/freertos.c:121:6:MX_FREERTOS_Init	1
+/home/nandana/TEAM_PROECT/team1project/CM7/Core/Src/freertos.c:163:6:StartDefaultTask	6

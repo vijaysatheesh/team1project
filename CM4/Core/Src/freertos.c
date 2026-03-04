@@ -25,7 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "share.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -35,12 +35,13 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define SH_MEM_SEM_ID 1
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
+__attribute__((section(".shared_ram")))
+SharedMemory_t s;
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -69,7 +70,6 @@ const osSemaphoreAttr_t timerBinarySem01_attributes = {
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
-
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void *argument);
@@ -134,14 +134,14 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
+
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
-  }
+
   /* USER CODE END StartDefaultTask */
 }
-
+}
 /* USER CODE BEGIN Header_Encodetransmit */
 /**
 * @brief Function implementing the EncodeTransmit thread.

@@ -58,7 +58,7 @@
 
 /* USER CODE BEGIN PV */
 __attribute__((section(".shared_ram")))
-SharedMemory_t s;
+extern SharedMemory_t s;
 
 /* USER CODE END PV */
 
@@ -71,7 +71,7 @@ void MX_FREERTOS_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+extern ADC_HandleTypeDef hadc3;
 /* USER CODE END 0 */
 
 /**
@@ -116,7 +116,13 @@ int main(void)
   s.reset_stats = 0;
   /* USER CODE END Init */
 
-  /* Configure the system clock */
+  /* Configure the system   s.min = 99.0f;
+  s.max = 0.0f;
+  s.avg = 0.0f;
+  s.sample_rate_index = 0;
+  s.is_run = 0;
+  s.instant_tx = 0;
+  s.reset_stats = 0;clock */
   SystemClock_Config();
 /* USER CODE BEGIN Boot_Mode_Sequence_2 */
 #if defined(DUAL_CORE_BOOT_SYNC_SEQUENCE)

@@ -59,7 +59,7 @@
 
 /* USER CODE BEGIN PV */
 __attribute__((section(".shared_ram")))
-SharedMemory_t s;
+extern SharedMemory_t s;
 
 /* USER CODE END PV */
 
@@ -121,7 +121,13 @@ int main(void)
   MX_USART2_UART_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  s.min = 99.0f;
+  s.max = 0.0f;
+  s.avg = 0.0f;
+  s.sample_rate_index = 0;
+  s.is_run = 0;
+  s.instant_tx = 0;
+  s.reset_stats = 0;
   /* USER CODE END 2 */
 
   /* Init scheduler */

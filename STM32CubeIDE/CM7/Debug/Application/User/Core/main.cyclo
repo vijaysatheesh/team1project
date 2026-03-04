@@ -1,3 +1,4 @@
-/home/vijay/Documents/STM/team1project0.1/CM7/Core/Src/main.c:79:5:main	7
-/home/vijay/Documents/STM/team1project0.1/CM7/Core/Src/main.c:168:6:SystemClock_Config	4
-/home/vijay/Documents/STM/team1project0.1/CM7/Core/Src/main.c:226:6:Error_Handler	1
+/home/nandana/TEAM_PROECT/team1project/CM7/Core/Src/main.c:81:5:main	7
+/home/nandana/TEAM_PROECT/team1project/CM7/Core/Src/main.c:182:6:SystemClock_Config	4
+/home/nandana/TEAM_PROECT/team1project/CM7/Core/Src/main.c:244:6:HAL_TIM_PeriodElapsedCallback	2
+/home/nandana/TEAM_PROECT/team1project/CM7/Core/Src/main.c:262:6:Error_Handler	1
